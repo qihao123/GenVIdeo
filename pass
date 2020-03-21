@@ -1,0 +1,10 @@
+class DataBase():
+    def __init__(self):
+        self.host="47.106.152.134"
+        self.user="root"
+        self.password="9420184c081e"
+        self.db="word"
+        self.port=3306
+
+API_KEY = '4VpcD6bFU7lFUDu2bdXlcRnS'
+SECRET_KEY = 'eGcRmmkKHc5oLeQ5Gshn6GnTAH2HQM9D'
