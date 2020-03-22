@@ -1,10 +1,10 @@
 # coding=utf-8
 
-from DataBase import DataBase
-from CutWorld import CutWorld
-from TextToAudio import TextToAudio
-from Audio_Process import Audio_Process
-from Gen_Video import Gen_Video
+from src.DataBase import DataBase
+from src.CutWorld import CutWorld
+from src.TextToAudio import TextToAudio
+from src.Audio_Process import Audio_Process
+from src.Gen_Video import Gen_Video
 
 '''
 

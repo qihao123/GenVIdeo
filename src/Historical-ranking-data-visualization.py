@@ -1,6 +1,4 @@
 # coding=utf-8
-from DataBase import DataBase
-import json
 
 '''
 生成动态排名可视化视频

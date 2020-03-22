@@ -1,9 +1,7 @@
 # coding=utf-8
-from DataBase import DataBase
-import json
 from moviepy.editor import *
 from moviepy.video.tools.credits import credits1
-from moviepy.editor import TextClip, CompositeVideoClip, AudioFileClip
+from moviepy.editor import CompositeVideoClip, AudioFileClip
 '''
 生成图片字母类视频
 传入一段文字，一张图片，一段音频生成字幕视频吗
