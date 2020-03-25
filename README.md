@@ -11,6 +11,8 @@
 项目运行利用python截取网页屏幕，将图片串成视频。
 <h3>4、快速生成图片字幕类视频</h3>
 输入文字，图片， 音频，快速生成视频。
+<h3>5、视频风格转移</h3>
+类似于(https://github.com/lengstrom/fast-style-transfer)此项目的视频风格转移
 <br>
 <br>
 <h2>二、目前需要的python依赖：</h2>
