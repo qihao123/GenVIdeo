@@ -14,5 +14,7 @@
 <br>
 <br>
 <h2>二、目前需要的python依赖：</h2>
-moviepy,pymysql,json,jieba,urllib,librosa,uuid,datatime,baidu-aip<br>
-(有些依赖比较难装，我装了好久QAQ，有问题可以给我发邮件哦)
+moviepy,pymysql,json,jieba,urllib,librosa,uuid,datatime,baidu-aip
+moviepy运行前还需要安装imagemagick的应用程序，在ImageMagic文件夹下，moviepy安装还需要修改一些配置，自己百度吧<br>
+(有些依赖比较难装，我装了好久QAQ，有问题可以给我发邮件哦)<br><br>
+ps:这个项目刚刚开始做功能还没想好呢，养一段时间再玩吧。。。
