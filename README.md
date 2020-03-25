@@ -12,7 +12,8 @@
 <h3>4、快速生成图片字幕类视频</h3>
 输入文字，图片， 音频，快速生成视频。
 <h3>5、视频风格转移</h3>
-类似于(https://github.com/lengstrom/fast-style-transfer)此项目的视频风格转移
+类似于(https://github.com/lengstrom/fast-style-transfer)
+此项目的视频风格转移
 <h3>6、批量上传，发布视频</h3>
 前期暂时先添加抖音平台视频批量上传视频功能，后期继续加入不同平台的接口
 <br>
