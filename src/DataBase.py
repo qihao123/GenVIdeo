@@ -102,7 +102,7 @@ class DataBase():
         '''
         if(self.test_connect()):
             conn,cursor = self.connect()
-            sql = "update `word` set `status` = 2 where uuid = %s"
+            sql = "update `word` set `status` = 1 where uuid = %s"
             try:
                 cursor.execute(sql,(str(uuid)))
                 conn.commit()
@@ -116,6 +116,6 @@ class DataBase():
             return False
 
 if __name__ == '__main__':
-    pass
+
     #print(DataBase().insert_word('1','3月9日某某对某某作出指示','新闻'))
-    #print(DataBase().get_word())
+    print(DataBase().test_connect())

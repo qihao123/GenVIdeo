@@ -1,5 +1,6 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 from moviepy.editor import TextClip, CompositeVideoClip, AudioFileClip
+
 '''
 视频生成类
 生成1280X720的视频
@@ -17,19 +18,23 @@ bug:
 class Gen_Video():
     def __init__(self):
         pass
-    def Gen_Video(self,beat_times,word_list,mp3path,uuid):
+    def Gen_Video(self,beat_times,mp3path,uuid):
+        FONT_URL = '../font/heimi.TTF'
+        with open(uuid+'.txt', 'r',encoding='utf-8') as f:
+            text_str = f.read()
+        word_list = text_str.split('\n')
         clips = []
         for index, beat_time in enumerate(beat_times[:-1]):
             if index >= len(word_list):
                 break
             print(f'{index + 1}/{len(beat_times)}——{word_list[index]}')
             text_clip = TextClip(
-                word_list[index].encode('utf-8'),
+                word_list[index],
                 fontsize=320 // 8,
                 color='white',
                 size=(320, 640),
                 method='caption',
-                font='msyhbd.ttc') \
+                font=FONT_URL) \
                 .set_start(beat_time) \
                 .set_end(beat_times[index + 1])
             text_clip = text_clip.set_pos('center')

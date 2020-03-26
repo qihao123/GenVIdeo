@@ -12,9 +12,19 @@ Author:@qh
 class Audio_Process():
     def __init__(self):
         pass
-    def Audio_Process(self,mp3path):
+    def Audio_Process(self,mp3path,num):
         y, sr = librosa.load(mp3path,sr=None)
-        tempo, beats = librosa.beat.beat_track(y=y, sr=sr)
-        beat_times = list(librosa.frames_to_time(beats, sr=sr))
-        beat_times.append(beat_times[-1] + 1)
-        return beat_times
+        time = librosa.get_duration(filename='./result.mp3')
+        #tempo, beats = librosa.beat.beat_track(y=y, sr=sr)
+        #beat_times = list(librosa.frames_to_time(beats, sr=sr))
+        #beat_times.append(beat_times[-1] + 1)
+        a = time/num
+        b = []
+        for i in range(num):
+            b.append(i*a)
+        return b
+
+if __name__ == '__main__':
+    num=32
+    mp3='C:\\Users\\Administrator\\PycharmProjects\\GenVIdeo\\src\\result.mp3'
+    Audio_Process().Audio_Process(mp3,32)

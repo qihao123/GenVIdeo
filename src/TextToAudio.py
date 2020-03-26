@@ -95,7 +95,7 @@ class TextToAudio():
             print("tts api  error:" + result_str)
 
         print("result saved as :" + save_file)
-        path = '/src/result.mp3'
+        path = 'C:\\Users\\Administrator\\PycharmProjects\\GenVIdeo\\src\\result.mp3'
         return path
 
     def fetch_token(self):

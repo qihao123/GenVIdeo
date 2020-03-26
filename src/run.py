@@ -1,5 +1,5 @@
 # coding=utf-8
-
+# -*- coding: utf-8 -*-
 from src.DataBase import DataBase
 from src.CutWorld import CutWorld
 from src.TextToAudio import TextToAudio
@@ -21,11 +21,12 @@ class run():
         text = DataBase().get_word()
         return text
     def run(self):
-        text,uuid = self.get_word()
-        wordlist = CutWorld().CutWorld(text)
+        uuid,text = self.get_word()
+        num = CutWorld().CutWorld(text,uuid)
         audio = TextToAudio().TextToAudio(text)
-        beat_info = Audio_Process().Audio_Process(audio)
-        Gen_Video().Gen_Video(beat_info,wordlist,audio,uuid)
+        #audio地址修改为本地音频的绝对路径
+        beat_info = Audio_Process().Audio_Process(audio,num)
+        Gen_Video().Gen_Video(beat_info,audio,uuid)
 
 if __name__ == '__main__':
     run().run()
