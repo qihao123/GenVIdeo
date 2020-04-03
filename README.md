@@ -7,9 +7,8 @@
 <h3>2、音频转视频</h3>
 输入一段音频，语音识别生成文字，然后生成对应的字幕视频。<br>
 <h3>3、快速生成动态排名数据可视化视频</h3>
-将[Historical-ranking-data-visualization-based-on-d3.js](https://github.com/Jannchie/Historical-ranking-data-visualization-based-on-d3.js)
-项目运行利用python截取网页屏幕，将图片串成视频。
-<iframe height=500 width=600 src="https://github.com/qihao123/GenVIdeo/video_example/Historical_ranking_data_visualization_example.mp4">
+运用movie中的模块将matplotlib画出的图表变成动画，效果如下链接所示：
+(https://github.com/qihao123/GenVIdeo/video_example/Historical_ranking_data_visualization_example.mp4)
 <h3>4、快速生成图片字幕类视频</h3>
 输入文字，图片， 音频，快速生成视频。
 <h3>5、视频风格转移</h3>
