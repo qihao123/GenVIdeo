@@ -39,6 +39,5 @@ moviepy运行前还需要安装imagemagick的应用程序，在ImageMagic文件�
 有问题请提issue，或发邮件至qihoo2017@gmail.com<br>
 ps:发送邮件请注明来意。<br>
 <br><br>
-[![qihao123's GitHub stats](https://github-readme-stats.vercel.app/api?username=qihao123)](https://github.com/qihao123/github-readme-stats)
 
 
